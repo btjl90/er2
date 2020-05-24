@@ -64,6 +64,10 @@ function showWarRoom() {
     document.getElementById("mainRoom").style.display = 'none';
 }
 
+function hideLabRoom() {
+    alert("This room is locked.");
+}
+
 function showLabRoom() {
     document.getElementById("labRoom").style.display = 'block';
     document.getElementById("mainRoom").style.display = 'none';
@@ -86,6 +90,8 @@ function showComputerPuzzle() {
 function checkCom() {
     if(document.getElementById("com1").value == 'crimZon' && document.getElementById("com2").value == '73') {
         document.getElementById("patientModal").style.display = 'block';
+        document.getElementById("enterLab").innerHTML = '<area shape="rect" coords="185,0,220,25" onclick="showLabRoom()">';
+        document.getElementById("denyLab").innerHTML = '';
     } else {
         alert("Nothing seem to happen.");
     }
