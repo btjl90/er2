@@ -23,7 +23,8 @@
         <area shape="rect" coords="640,205,675,215" onclick="openFileModal()">
         <area shape="rect" coords="325,270,415,295" onclick="showExit()">
         <area shape="rect" coords="0,120,35,145" onclick="showWarRoom()">
-        <area shape="rect" coords="185,0,220,25" onclick="showLabRoom()">
+        <div id="enterLab"></div>
+        <div id="denyLab"><area shape="rect" coords="185,0,220,25" onclick="hideLabRoom()"></div>
         <area shape="rect" coords="520,0,555,25" onclick="showCageRoom()">
         <area shape="rect" coords="705,125,740,145" onclick="showComputerRoom()">
         </map>
@@ -177,7 +178,7 @@
       <h2>The Cure</h2>
     </div>
     <div class="modal-body">
-        <p>Blood plasma of patient: Peni Parker was found to contain the vaccine of the crimzon virus.</p>
+        <p>Blood plasma of patient: Peni Parker was found to contain the vaccine of the crimzon virus.<br>A door unlocks.</p>
     </div>
     <div class="modal-footer">
     </div></div></div>
@@ -199,7 +200,7 @@
       <h2>The Rainbow Poster</h2>
     </div>
     <div class="modal-body">
-        <p>You found a scribble on the poster.<br><br><i>enter the first four colors of the rainbow,<br>starting from the shortest.</i></p>
+        <p>You found a scribble on the poster.<br><br><i>enter the colors of the rainbow,<br>starting from the shortest.</i></p>
     </div>
     <div class="modal-footer">
     </div></div></div>
